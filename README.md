@@ -1,3 +1,4 @@
+
 RentLock: The Yield-Protected RWA Escrow Engine
 ===============================================
 
@@ -5,6 +6,8 @@ RentLock: The Yield-Protected RWA Escrow Engine
 -------------
 
 **RentLock** transforms the stagnant £10B rental deposit market into a high-utility, yield-generating RWA protocol. By leveraging **Uniswap v4's Hook infrastructure**, we move deposits from idle custodial accounts into active, gas-optimized liquidity, while providing institutional-grade security for both tenants and landlords.
+
+This is a global solution with massive potential---the impact of such automated escrow and yield generation is particularly transformative for the high-margin rental markets emerging across Africa and Asia.
 
 🚀 Key Innovations
 ------------------
@@ -33,9 +36,7 @@ RentLock: The Yield-Protected RWA Escrow Engine
 📂 Monorepo Structure
 ---------------------
 
-Plaintext
-
-```
+```text
 /packages/contracts
 ├── src/core/LeaseManager.sol       # Logic for lease status & deposit escrow
 ├── src/hooks/RentLockSentryHook.sol # Dynamic fee & LVR capture logic
@@ -47,11 +48,13 @@ Plaintext
 🏗️ Quick Start
 ---------------
 
-Bash
-
-```
+```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/rentlock-protocol.git
+git clone https://github.com/benpaymaster/rentlock-protocol.git
+cd rentlock-protocol
+
+# Enter the contracts directory where Foundry is configured
+cd packages/contracts
 
 # Install dependencies
 forge install
@@ -64,4 +67,4 @@ forge test
 📜 License
 ----------
 
-MIT# rentlock-protocol
+MIT
